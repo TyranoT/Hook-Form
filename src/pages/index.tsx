@@ -6,9 +6,17 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`h-screen bg-zinc-50 flex  ${inter.className}`}
     >
-      
+      <form action="" className="flex felx-col gap-4">
+        <label htmlFor="">E-mail:</label>
+        <input type="email" name="email"/>
+
+        <label htmlFor="">Senha:</label>
+        <input type="password" name="password" />
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
   );
 }
