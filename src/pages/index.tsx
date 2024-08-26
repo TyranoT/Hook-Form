@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form';
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-
   const { register, handleSubmit } = useForm()
 
   function criarUsuario(data: any) {
